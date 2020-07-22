@@ -8,9 +8,10 @@ def join_nested_strings(src)
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
+      binding.pry
       if src[row_index][element_index].class == String
       combined += src[row_index][element_index]
-      binding.pry
+
       end
       element_index +=1
     end
